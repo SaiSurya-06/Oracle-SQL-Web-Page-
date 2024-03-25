@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oracle SQL Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Oracle SQL</h1>
+    <div class="content">
+      <h2>Introduction</h2>
+      <p>Welcome to our introductory Oracle SQL web page, designed to lay the groundwork for your journey into the realm of database management. Here, we provide a comprehensive overview of basic Oracle SQL concepts, equipping you with the fundamental knowledge needed to navigate and manipulate data effectively. From understanding essential syntax to executing simple queries, this page serves as your starting point in mastering Oracle SQL. With clear explanations and illustrative examples, we aim to demystify the complexities of database querying, empowering you to confidently interact with Oracle databases. Whether you're a beginner exploring the world of SQL for the first time or seeking a refresher on the basics, our page is here to support your learning endeavors. Let's embark on this enriching educational journey together and unlock the potential of Oracle SQL!</p>
+    </div>
+    <div class="rdbms-module">
+      <img class="rdbms-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjco_ir_7FKPuiIUxJGZU0h-i-MeVT6-DYQswOt1sBWJ5WVeG73VoCqnFWgpVTnfcxRgSeLGmxNC3emnG18QrSHnCWhUhVYX5VTPVERCs6vhy5l_ooWieJdGyfnNypcd3CVeRXNl4wEsN7NuvJ4kuomJk1C_cXbe2iHnK5CaJi6FfMitaavijvgwqwMfYg/s722/RDBMS.png" alt="RDBMS Image"> 
+      <div class="sideHeading">RDBMS</div>
+      <div class="sideText">- RDBMS stands for Relational Database Management System.</div>
+      <div class="sideText">- Edgar F. Codd introduced RDBMS in the year 1970.</div>
+      <div class="sideText">- RDBMS is software used to manage databases.</div>
+      <div class="sideText">- Manage stands for storing data, retrieving data, updating old data, and deleting unwanted data from the database.</div>
+      <div class="sideText">- Using RDBMS software, we can perform CRUD operations on databases.</div>
+      <div class="sideText">- To interact with RDBMS software, we use Structured Query Language (SQL).</div>
+    </div>
+    <div class="rdbms-module">
+      <div class="sideHeading">Edgar F Codd Rules For RDBMS</div>
+      <div class="sideText">- By using RDBMS software, we can store data in the form of rows and columns (Tables).</div>
+      <div class="sideText">- Using RDBMS software with the help of SQL, we can create multiple tables in the database.</div>
+      <div class="sideText">- We can retrieve data from multiple tables with the help of SQL using RDBMS software.</div>
+      <div class="sideText">- We have to store data in the table like atomic values (Single values for cell).</div>
+      <div class="sideText">- Using Metadata, we can store data details inside the table using RDBMS (Details for data).</div>
+    </div>
+    <div class="rdbms-module">
+      <div class="sideHeading">SQL</div>
+      <div class="sideText">- SQL stands for Structured Query Language.</div>
+      <div class="sideText">- IBM researchers Raymond Boycee and Donald Chamberlin, they intodused SQL in the year of 1970.</div>
+      <div class="sideText">- SQL it is a language which is used to communicate with database server with the help of RDBMS software.</div>
+      <div class="sideText">- SQL it is also know as Sequal Query Language.</div>
+      <div class="sideText">- SQL is not a case sencitive language but data present inside the table is case sencitive.</div>
+      <div class="sideText">- In SQL each and every query must and should ends with a semi colon(;).</div>
+    </div>
+    <div class="rdbms-module">
+      <!--DQL-->
+      <div class="sideHeading">DQL(DATA QUERY LANGUAGE)</div>
+      <p>DQL statements are used to retrive data from the database.</p>
+      <ul>
+        <li>
+          <span class="toggleButton" onclick="toggleVisibility(1)">1. SELECT</span>
+          <p id="demo1" style="display: none; padding-left: 20px;">
+              It is used to retrieve data from the database, by selecting all the records.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME;
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(2)">2. *(PROJECTION)</span>
+          <p id="demo2" style="display: none; padding-left: 20px;">
+              It is used to retrieve data from the database, by selecting all the columns.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(3)">3. FROM</span>
+          <p id="demo3" style="display: none; padding-left: 20px;">
+              It is a keyword and it is used to specify the table name.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(4)">4. WHERE</span>
+          <p id="demo4" style="display: none; padding-left: 20px;">
+              Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME<br>
+              WHERE CONDITION;
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(5)">5. ORDER BY</span>
+          <p id="demo5" style="display: none; padding-left: 20px;">
+              Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME<br>
+              WHERE CONDITION<br>
+              ORDER BY COLUMN_NAME ASC/DESC;
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(6)">6. GROUP BY</span>
+          <p id="demo6" style="display: none; padding-left: 20px;">
+              Group by clause it is used to divide the table into multiple groups and it will execute each output for each group.<br>
+              *(Whatever column we are using inside the select statement along with multi row function the same column we have to use inside the Group by clause)<br>
+              <u>SYNTAX:</u><br>
+              SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+              WHERE CONDITION<br>
+              GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+              ORDER BY COLUMN_NAME ASC/DESC;
+          </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(7)">7. HAVING</span>
+        <p id="demo7" style="display: none; padding-left: 20px;">
+            Having clause it is use to create groups for group by condition and if there is an condition for multi row functions we have to go for having clause.<br>
+            *(For using Having clause Group by condition is mandatory)<br>
+            <u>SYNTAX:</u><br>
+            SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+            WHERE CONDITION<br>
+            GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+            HAVING CLAUSE<br>
+            ORDER BY COLUMN_NAME ASC/DESC;
+        </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(8)">EXAMPLE FOR DQL</span>
+        <p id="demo8" style="display: none; padding-left: 20px;">
+            SELECT DEPTNO, MAX(SAL) FROM EMP<br>
+            WHERE JOB = 'SALESMAN' OR JOB = 'MANAGER'<br>
+            GROUP BY(DEPTNO)<br>
+            HAVING MAX(SAL)> 2500<br>
+            ORDER BY DEPTNO ASC;
+        </p>
+      </li>
+          <!-- Add more li elements with spans and paragraphs as needed -->
+      </ul>
+      
+  <!--DDL-->
+  <div class="sideHeading">DDL(DATA DEFINITION LANGUAGE)</div>
+  <p>All the Data Definition Language statements are used to create structure of the table and it is used to modify structure of the table.<br>
+  - All the Data Definition Langusage statements are permanent changes.</p>
+      <ul>
+        <li>
+          <span class="toggleButton" onclick="toggleVisibility(9)">1. CREATE</span>
+          <p id="demo9" style="display: none; padding-left: 20px;">
+              It is used to retrieve data from the database, by selecting all the records.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME;
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(10)">2. RENAME TABLE NAME</span>
+          <p id="demo10" style="display: none; padding-left: 20px;">
+              It is used to retrieve data from the database, by selecting all the columns.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(11)">3. DROP TABLE</span>
+          <p id="demo11" style="display: none; padding-left: 20px;">
+              It is a keyword and it is used to specify the table name.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(12)">4. TRUNCATE TABLE</span>
+          <p id="demo12" style="display: none; padding-left: 20px;">
+              Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME<br>
+              WHERE CONDITION;
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(13)">5. FLACHBACK TABLE</span>
+          <p id="demo13" style="display: none; padding-left: 20px;">
+              Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
+              <u>SYNTAX:</u><br>
+              SELECT * FROM TABLE_NAME<br>
+              WHERE CONDITION<br>
+              ORDER BY COLUMN_NAME ASC/DESC;
+          </p>
+      </li>
+      <li>
+          <span class="toggleButton" onclick="toggleVisibility(14)">6. PURGE</span>
+          <p id="demo14" style="display: none; padding-left: 20px;">
+              Group by clause it is used to divide the table into multiple groups and it will execute each output for each group.<br>
+              *(Whatever column we are using inside the select statement along with multi row function the same column we have to use inside the Group by clause)<br>
+              <u>SYNTAX:</u><br>
+              SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+              WHERE CONDITION<br>
+              GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+              ORDER BY COLUMN_NAME ASC/DESC;
+          </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(15)">7. ALTER</span>
+        <p id="demo15" style="display: none; padding-left: 20px;">
+            Having clause it is use to create groups for group by condition and if there is an condition for multi row functions we have to go for having clause.<br>
+            *(For using Having clause Group by condition is mandatory)<br>
+            <u>SYNTAX:</u><br>
+            SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+            WHERE CONDITION<br>
+            GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+            HAVING CLAUSE<br>
+            ORDER BY COLUMN_NAME ASC/DESC;
+        </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(16)">8. ADD SINGLE COLUMN TO AN EXCISTING TABLE</span>
+        <p id="demo16" style="display: none; padding-left: 20px;">
+            It is used to retrieve data from the database, by selecting all the records.<br>
+            <u>SYNTAX:</u><br>
+            SELECT * FROM TABLE_NAME;
+        </p>
+      </li>
+      <li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(17)">9. ADD MULTIPLE COLUMN'S TO AN EXCSTING TABLE</span>
+        <p id="demo17" style="display: none; padding-left: 20px;">
+            It is used to retrieve data from the database, by selecting all the records.<br>
+            <u>SYNTAX:</u><br>
+            SELECT * FROM TABLE_NAME;
+        </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(18)">10. DROP SINGLE COLUMN</span>
+        <p id="demo18" style="display: none; padding-left: 20px;">
+            It is used to retrieve data from the database, by selecting all the columns.<br>
+            <u>SYNTAX:</u><br>
+            SELECT * FROM TABLE_NAME
+        </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(19)">11. DROP MULTIPLE COLUMN'S FROM TABLE</span>
+        <p id="demo19" style="display: none; padding-left: 20px;">
+            It is a keyword and it is used to specify the table name.<br>
+            <u>SYNTAX:</u><br>
+            SELECT * FROM TABLE_NAME
+        </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(20)">12. MODIFY DATATYPE FOR A COLUMN</span>
+        <p id="demo20" style="display: none; padding-left: 20px;">
+            Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+            <u>SYNTAX:</u><br>
+            SELECT * FROM TABLE_NAME<br>
+            WHERE CONDITION;
+        </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(21)">13. MODIFY CONSTRIANTS FOR A COLUMN</span>
+        <p id="demo21" style="display: none; padding-left: 20px;">
+            Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
+            <u>SYNTAX:</u><br>
+            SELECT * FROM TABLE_NAME<br>
+            WHERE CONDITION<br>
+            ORDER BY COLUMN_NAME ASC/DESC;
+        </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(22)">14. RENAME COULMN NAME</span>
+        <p id="demo22" style="display: none; padding-left: 20px;">
+            Group by clause it is used to divide the table into multiple groups and it will execute each output for each group.<br>
+            *(Whatever column we are using inside the select statement along with multi row function the same column we have to use inside the Group by clause)<br>
+            <u>SYNTAX:</u><br>
+            SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+            WHERE CONDITION<br>
+            GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+            ORDER BY COLUMN_NAME ASC/DESC;
+        </p>
+      </li>
+      <li>
+        <span class="toggleButton" onclick="toggleVisibility(23)">15. DROUP PRIMARY KEY</span>
+        <p id="demo23" style="display: none; padding-left: 20px;">
+            Having clause it is use to create groups for group by condition and if there is an condition for multi row functions we have to go for having clause.<br>
+            *(For using Having clause Group by condition is mandatory)<br>
+            <u>SYNTAX:</u><br>
+            SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+            WHERE CONDITION<br>
+            GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+            HAVING CLAUSE<br>
+            ORDER BY COLUMN_NAME ASC/DESC;
+        </p>
+      </li>
+      
+          <!-- Add more li elements with spans and paragraphs as needed -->
+      </ul>
+  </div>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
