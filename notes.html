@@ -488,7 +488,9 @@
 
       <div class="rdbms-module">
         <div class="sideHeading">DML(DATA MANUPLATION LANGUAGE)</div>
-        <p>It is a dummy table and it consist of only one column and one record.<br></p>
+        <p>- All Data Manuplation Statements are used to manage the database.<br>
+        - Manage stands for storing data, retriving data, updating data, deleting data.<br>
+        </p>
         <ul>
           <li>
             <span class="toggleButton" onclick="toggleVisibility(38)">1. INSERT DATA</span>
@@ -536,7 +538,7 @@
 
       <div class="rdbms-module">
         <div class="sideHeading">TCL(TRANSCATION CONTROL LANGUAGE)</div>
-        <p>It is a dummy table and it consist of only one column and one record.<br></p>
+        <p>- All data manuplation language statements are temporary changes to make them permanent changes we have to use TCL.<br></p>
         <ul>
           <li>
             <span class="toggleButton" onclick="toggleVisibility(41)">1. COMMIT</span>
@@ -584,7 +586,9 @@
 
       <div class="rdbms-module">
         <div class="sideHeading">DCL(DATA CONTROL LANGUAGE)</div>
-        <p>It is a dummy table and it consist of only one column and one record.<br></p>
+        <p>- DCL stands for Data Control Language. It comprises a set of commands used to control access to data stored in the database.<br>
+        - The primary focus of DCL is on permissions, security, and other related aspects of database management.<br>
+        </p>
         <ul>
           <li>
             <span class="toggleButton" onclick="toggleVisibility(44)">1. GRANT</span>
@@ -619,418 +623,727 @@
       
       <div class="rdbms-module">
         <div class="sideHeading">OPERATORS</div>
-        <p>All the Data Definition Language statements are used to create the structure of the table and it is used to modify the structure of the table.<br>
-        - All the Data Definition Language statements are permanent changes.</p>
+        <p>- Operators are some special symbols and all are used to perform some operations on operand.</p>
         <ul>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(54)">1. ARITHMATIC OPERATOR ( +, -, *, /)</span>
-            <p id="demo54" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(55)">2. RELATIONAL OPERATOR (<, >, <=, >=, !=, =)</span>
-            <p id="demo55" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(56)">3. LOGICAL OPERATOR (AND, OR, NOT)</span>
-            <p id="demo56" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(57)">4. SPECIAL OPERATOR</span>
-            <p id="demo57" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(58)">5. CONCATENATION OPERATOR (||)</span>
-            <p id="demo58" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(59)">6. SET OPERATOR</span>
-            <p id="demo59" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
+            <li>
+                <span class="toggleButton" onclick="toggleVisibility(46)">1. ARITHMETIC OPERATOR ( +, -, *, /)</span>
+                <p id="demo46" style="display: none; padding-left: 20px;">
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME;
+                </p>
+            </li>
+            <li>
+                <span class="toggleButton" onclick="toggleVisibility(47)">2. RELATIONAL OPERATOR (<, >, <=, >=, !=, =)</span>
+                <p id="demo47" style="display: none; padding-left: 20px;">
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME;
+                </p>
+            </li>
+            <li>
+                <span class="toggleButton" onclick="toggleVisibility(48)">3. LOGICAL OPERATOR (AND, OR, NOT)</span>
+                <p id="demo48" style="display: none; padding-left: 20px;">
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME;
+                </p>
+            </li>
+            <li>
+                <span class="toggleButton" onclick="toggleVisibility(49)">4. SPECIAL OPERATOR</span>
+                <p id="demo49" style="display: none; padding-left: 20px;">
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME;
+                </p>
+            </li>
+            <li>
+                <span class="toggleButton" onclick="toggleVisibility(50)">5. CONCATENATION OPERATOR (||)</span>
+                <p id="demo50" style="display: none; padding-left: 20px;">
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME;
+                </p>
+            </li>
+            <li>
+                <span class="toggleButton" onclick="toggleVisibility(51)">6. SET OPERATOR</span>
+                <p id="demo51" style="display: none; padding-left: 20px;">
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME;
+                </p>
+            </li>
         </ul>
-        </div>
-        
-        <!--FUNCTIONS-->
-      
-      <div class="rdbms-module">
+    </div>
+    
+    <!--FUNCTIONS-->
+    
+    <div class="rdbms-module">
         <div class="sideHeading">FUNCTIONS</div>
-        <p>All the Data Definition Language statements are used to create the structure of the table and it is used to modify the structure of the table.<br>
-        - All the Data Definition Language statements are permanent changes.</p>
+        <p>Functions are important features of sql and all functions are used to perform some calculations on data.</p>
         <b>1. <u>SINGLE ROW FUNCTIONS (SCALAR)</u></b><br><br>
+        <pstyle="display: none; padding-left: 20px;>- Single row function it will take multiple inputs from the user and it will excute multiple value outputs.<br>
+        - Single row function we can use inside select statement and inside the where condition.<br>
+        - We can use multiple single row functions inside the one select statement.<br>
+        </p>
         <ul>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(60)">1. UPPER()</span>
-            <p id="demo60" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(61)">2. LOWER()</span>
-            <p id="demo61" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the columns.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(62)">3. INITCAP</span>
-            <p id="demo62" style="display: none; padding-left: 20px;">
-              It is a keyword and it is used to specify the table name.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(63)">4. LENGTH</span>
-            <p id="demo63" style="display: none; padding-left: 20px;">
-              Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(64)">5. CONCAT</span>
-            <p id="demo64" style="display: none; padding-left: 20px;">
-              Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION<br>
-              ORDER BY COLUMN_NAME ASC/DESC;
-            </p>       
+            <li>
+                <span class="toggleButton" onclick="toggleVisibility(52)">1. UPPER()</span>
+                <p id="demo52" style="display: none; padding-left: 20px;">
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME;
+                </p>
             </li>
             <li>
-              <span class="toggleButton" onclick="toggleVisibility(65)">6. SUBSTR</span>
-              <p id="demo65" style="display: none; padding-left: 20px;">
-                Group by clause it is used to divide the table into multiple groups and it will execute each output for each group.<br>
-                *(Whatever column we are using inside the select statement along with multi-row function the same column we have to use inside the Group by clause)<br>
-                <u>SYNTAX:</u><br>
-                SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
-                WHERE CONDITION<br>
-                GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
-                ORDER BY COLUMN_NAME ASC/DESC;
-              </p>
+                <span class="toggleButton" onclick="toggleVisibility(53)">2. LOWER()</span>
+                <p id="demo53" style="display: none; padding-left: 20px;">
+                    It is used to retrieve data from the database, by selecting all the columns.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME
+                </p>
             </li>
             <li>
-              <span class="toggleButton" onclick="toggleVisibility(66)">7. REPLACE</span>
-              <p id="demo66" style="display: none; padding-left: 20px;">
-                Having clause it is used to create groups for group by condition and if there is a condition for multi-row functions we have to go for having clause.<br>
-                *(For using Having clause Group by condition is mandatory)<br>
-                <u>SYNTAX:</u><br>
-                SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
-                WHERE CONDITION<br>
-                GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
-                HAVING CLAUSE<br>
-                ORDER BY COLUMN_NAME ASC/DESC;
-              </p>
+                <span class="toggleButton" onclick="toggleVisibility(54)">3. INITCAP</span>
+                <p id="demo54" style="display: none; padding-left: 20px;">
+                    It is a keyword and it is used to specify the table name.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME
+                </p>
             </li>
             <li>
-              <span class="toggleButton" onclick="toggleVisibility(67)">8. INSTR</span>
-              <p id="demo67" style="display: none; padding-left: 20px;">
-                It is used to retrieve data from the database, by selecting all the records.<br>
-                <u>SYNTAX:</u><br>
-                SELECT * FROM TABLE_NAME;
-              </p>
+                <span class="toggleButton" onclick="toggleVisibility(55)">4. LENGTH</span>
+                <p id="demo55" style="display: none; padding-left: 20px;">
+                    Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME<br>
+                    WHERE CONDITION;
+                </p>
             </li>
             <li>
-              <span class="toggleButton" onclick="toggleVisibility(68)">9. CASE</span>
-              <p id="demo68" style="display: none; padding-left: 20px;">
-                It is used to retrieve data from the database, by selecting all the records.<br>
-                <u>SYNTAX:</u><br>
-                SELECT * FROM TABLE_NAME;
-              </p>
+                <span class="toggleButton" onclick="toggleVisibility(56)">5. CONCAT</span>
+                <p id="demo56" style="display: none; padding-left: 20px;">
+                    Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT * FROM TABLE_NAME<br>
+                    WHERE CONDITION<br>
+                    ORDER BY COLUMN_NAME ASC/DESC;
+                </p>
             </li>
             <li>
-              <span class="toggleButton" onclick="toggleVisibility(69)">10. LPAD</span>
-              <p id="demo69" style="display: none; padding-left: 20px;">
-                It is used to retrieve data from the database, by selecting all the columns.<br>
-                <u>SYNTAX:</u><br>
-                SELECT * FROM TABLE_NAME
-              </p>
+                <span class="toggleButton" onclick="toggleVisibility(57)">6. SUBSTR</span>
+                <p id="demo57" style="display: none; padding-left: 20px;">
+                    Group by clause it is used to divide the table into multiple groups and it will execute each output for each group.<br>
+                    *(Whatever column we are using inside the select statement along with multi-row function the same column we have to use inside the Group by clause)<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+                    WHERE CONDITION<br>
+                    GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+                    ORDER BY COLUMN_NAME ASC/DESC;
+                </p>
             </li>
             <li>
-              <span class="toggleButton" onclick="toggleVisibility(70)">11. LPAD</span>
-              <p id="demo70" style="display: none; padding-left: 20px;">
-                It is a keyword and it is used to specify the table name.<br>
-                <u>SYNTAX:</u><br>
-                SELECT * FROM TABLE_NAME
-              </p>
-            </li>
-            <li>
-              <span class="toggleButton" onclick="toggleVisibility(71)">12. ASCII</span>
-              <p id="demo71" style="display: none; padding-left: 20px;">
-                Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
-                <u>SYNTAX:</u><br>
-                SELECT * FROM TABLE_NAME<br>
-                WHERE CONDITION;
-              </p>
-            </li>
-            <li>
-              <span class="toggleButton" onclick="toggleVisibility(72)">13. GREATER</span>
-              <p id="demo73" style="display: none; padding-left: 20px;">
-                Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
-                <u>SYNTAX:</u><br>
-                SELECT * FROM TABLE_NAME<br>
-                WHERE CONDITION<br>
-                ORDER BY COLUMN_NAME ASC/DESC;
-              </p>
-            </li>
-            <li>
-              <span class="toggleButton" onclick="toggleVisibility(74)">14. LEAST</span>
-              <p id="demo74" style="display: none; padding-left: 20px;">
-                Group by clause it is used to divide the table into multiple groups and it will execute each output for each group.<br>
-                *(Whatever column we are using inside the select statement along with multi-row function the same column we have to use inside the Group by clause)<br>
-                <u>SYNTAX:</u><br>
-                SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
-                WHERE CONDITION<br>
-                GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
-                ORDER BY COLUMN_NAME ASC/DESC;
-              </p>
-            </li>
-          </ul>
-          <b>2. <u>MULTI ROW FUNCTIONS (AGGREATE)</u></b><br><br>
-        <ul>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(75)">1. MAX()</span>
-            <p id="demo75" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(76)">2. MIN()</span>
-            <p id="demo76" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the columns.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(77)">3. AVG()</span>
-            <p id="demo77" style="display: none; padding-left: 20px;">
-              It is a keyword and it is used to specify the table name.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(78)">4. SUM()</span>
-            <p id="demo78" style="display: none; padding-left: 20px;">
-              Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(79)">5. COUNT()</span>
-            <p id="demo79" style="display: none; padding-left: 20px;">
-              Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION<br>
-              ORDER BY COLUMN_NAME ASC/DESC;
-            </p>       
-            </li>
-        </ul>
-        <b>3. <u>DATE FUNCTIONS</u></b><br><br>
-        <ul>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(80)">1. SYSDATE</span>
-            <p id="demo80" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(81)">2. SYSTIMESTAMP</span>
-            <p id="demo81" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the columns.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(82)">3. TO_CHAR</span>
-            <p id="demo82" style="display: none; padding-left: 20px;">
-              It is a keyword and it is used to specify the table name.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(83)">4. TO_DATE</span>
-            <p id="demo83" style="display: none; padding-left: 20px;">
-              Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(84)">5. LASTE_DAY</span>
-            <p id="demo84" style="display: none; padding-left: 20px;">
-              Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION<br>
-              ORDER BY COLUMN_NAME ASC/DESC;
-            </p>       
-            </li>
-            <li>
-              <span class="toggleButton" onclick="toggleVisibility(85)">6. MONTHS_BETWEEN</span>
-              <p id="demo85" style="display: none; padding-left: 20px;">
-                Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
-                <u>SYNTAX:</u><br>
-                SELECT * FROM TABLE_NAME<br>
-                WHERE CONDITION<br>
-                ORDER BY COLUMN_NAME ASC/DESC;
-              </p>       
+                <span class="toggleButton" onclick="toggleVisibility(58)">7. REPLACE</span>
+                <p id="demo58" style="display: none; padding-left: 20px;">
+                    Having clause it is used to create groups for group by condition and if there is a condition for multi-row functions we have to go for having clause.<br>
+                    *(For using Having clause Group by condition is mandatory)<br>
+                    <u>SYNTAX:</u><br>
+                    SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION<br>
+    
+                    GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+    
+                    HAVING CLAUSE<br>
+    
+                    ORDER BY COLUMN_NAME ASC/DESC;
+    
+                  </p>
+    
               </li>
-        </ul>
-        <b>4. <u>NVL</u></b><br><br>
-        <ul>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(86)">NVL</span>
-            <p id="demo86" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-        </ul>
-      </div>
+    
+              <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(59)">8. INSTR</span>
+    
+                  <p id="demo59" style="display: none; padding-left: 20px;">
+    
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME;
+    
+                  </p>
+    
+              </li>
+    
+              <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(60)">9. CASE</span>
+    
+                  <p id="demo60" style="display: none; padding-left: 20px;">
+    
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME;
+    
+                  </p>
+    
+              </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(61)">10. LPAD</span>
+    
+                  <p id="demo61" style="display: none; padding-left: 20px;">
+    
+                    It is used to retrieve data from the database, by selecting all the columns.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(62)">11. LPAD</span>
+    
+                  <p id="demo62" style="display: none; padding-left: 20px;">
+    
+                    It is a keyword and it is used to specify the table name.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(63)">12. ASCII</span>
+    
+                  <p id="demo63" style="display: none; padding-left: 20px;">
+    
+                    Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION;
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(64)">13. GREATER</span>
+    
+                  <p id="demo64" style="display: none; padding-left: 20px;">
+    
+                    Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION<br>
+    
+                    ORDER BY COLUMN_NAME ASC/DESC;
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(65)">14. LEAST</span>
+    
+                  <p id="demo65" style="display: none; padding-left: 20px;">
+    
+                    Group by clause it is used to divide the table into multiple groups and it will execute each output for each group.<br>
+    
+                    *(Whatever column we are using inside the select statement along with multi-row function the same column we have to use inside the Group by clause)<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT COLUMN_NAME1, COLUMN_NAME2, MULTI ROW FUNCTION FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION<br>
+    
+                    GROUP BY(COLUMN_NAME1, COLUMN_NAME2)<br>
+    
+                    ORDER BY COLUMN_NAME ASC/DESC;
+    
+                  </p>
+    
+                </li>
+    
+              </ul>
+    
+              <b>2. <u>MULTI ROW FUNCTIONS (AGGREGATE)</u></b><br><br>
+              <pstyle="display: none; padding-left: 20px;>- Multi row function it will take multiple inputs from the user and it will excute single value output.<br>
+        
+              - Multi row functions it is also know as aggrrgate function.<br>
+        
+              - Combination of column of multi row function it is not possiable, we will get single-group function error, to over come from that error we have to go for "GROUP BY CONDITION".<br>
 
-      <!--SUB QUERY-->
-      
-      <div class="rdbms-module">
-        <div class="sideHeading">SUB QUERY</div>
-        <p>All the Data Definition Language statements are used to create the structure of the table and it is used to modify the structure of the table.<br>
-        - All the Data Definition Language statements are permanent changes.</p>
-        <ul>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(87)">1. SINGLE ROW SUB QUERY</span>
-            <p id="demo87" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(88)">2. MULIT ROW SUB QUERY</span>
-            <p id="demo88" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the columns.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(89)">3. NESTED SUB QUERY</span>
-            <p id="demo89" style="display: none; padding-left: 20px;">
-              It is a keyword and it is used to specify the table name.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(90)">4. CO – RELATED SUB QUERY</span>
-            <p id="demo90" style="display: none; padding-left: 20px;">
-              Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION;
-            </p>
-          </li>
-        </ul>
-      </div>
+              - The multi row function can used inside the where condition, if there is an condition for multi row function we have to go for "HAVING CLAUSE".<br>
 
-      <!--JOINS-->
-      
-      <div class="rdbms-module">
-        <div class="sideHeading">JOINS</div>
-        <p>All the Data Definition Language statements are used to create the structure of the table and it is used to modify the structure of the table.<br>
-        - All the Data Definition Language statements are permanent changes.</p>
-        <ul>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(91)">1. CROSS JOIN</span>
-            <p id="demo91" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the records.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(92)">2. INNER JOIN</span>
-            <p id="demo92" style="display: none; padding-left: 20px;">
-              It is used to retrieve data from the database, by selecting all the columns.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(93)">3. LEFT OUTER JOIN</span>
-            <p id="demo93" style="display: none; padding-left: 20px;">
-              It is a keyword and it is used to specify the table name.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(94)">4. RIGHT OUTER JOIN</span>
-            <p id="demo94" style="display: none; padding-left: 20px;">
-              Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(95)">5. FULL OUTER JOIN</span>
-            <p id="demo95" style="display: none; padding-left: 20px;">
-              Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
-              <u>SYNTAX:</u><br>
-              SELECT * FROM TABLE_NAME<br>
-              WHERE CONDITION;
-            </p>
-          </li>
-          <li>
-            <span class="toggleButton" onclick="toggleVisibility(96)">6. SELF JOIN</span>
-            <p id="demo96" style="display: none; padding-left: 20px;">
-              ############.<br>
-              <u>SYNTAX:</u><br>
-              ############<br>
-              ############;
-            </p>
-          </li>
-        </ul>
-      </div>
+              - We can use multiple multi row function inside select statement.
+        
+              </p>
+    
+              <ul>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(66)">1. MAX()</span>
+    
+                  <p id="demo66" style="display: none; padding-left: 20px;">
+    
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME;
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(67)">2. MIN()</span>
+    
+                  <p id="demo67" style="display: none; padding-left: 20px;">
+    
+                    It is used to retrieve data from the database, by selecting all the columns.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(68)">3. AVG()</span>
+    
+                  <p id="demo68" style="display: none; padding-left: 20px;">
+    
+                    It is a keyword and it is used to specify the table name.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(69)">4. SUM()</span>
+    
+                  <p id="demo69" style="display: none; padding-left: 20px;">
+    
+                    Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION;
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(70)">5. COUNT()</span>
+    
+                  <p id="demo70" style="display: none; padding-left: 20px;">
+    
+                    Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION<br>
+    
+                    ORDER BY COLUMN_NAME ASC/DESC;
+    
+                  </p>
+    
+                </li>
+    
+              </ul>
+    
+              <b>3. <u>DATE FUNCTIONS</u></b><br><br>
+              <pstyle="display: none; padding-left: 20px;>- Date functions are used to perform operations on date and time data types.<br>
+              - These functions help in manipulating, formatting, and extracting specific components (such as year, month, day, hour, minute, second) from date values.</pstyle>
+    
+              <ul>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(71)">1. SYSDATE</span>
+    
+                  <p id="demo71" style="display: none; padding-left: 20px;">
+    
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME;
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(72)">2. SYSTIMESTAMP</span>
+    
+                  <p id="demo72" style="display: none; padding-left: 20px;">
+    
+                    It is used to retrieve data from the database, by selecting all the columns.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(73)">3. TO_CHAR</span>
+    
+                  <p id="demo73" style="display: none; padding-left: 20px;">
+    
+                    It is a keyword and it is used to specify the table name.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(74)">4. TO_DATE</span>
+    
+                  <p id="demo74" style="display: none; padding-left: 20px;">
+    
+                    Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION;
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(75)">5. LAST_DAY</span>
+    
+                  <p id="demo75" style="display: none; padding-left: 20px;">
+    
+                    Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION<br>
+    
+                    ORDER BY COLUMN_NAME ASC/DESC;
+    
+                  </p>
+    
+                </li>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(76)">6. MONTHS_BETWEEN</span>
+    
+                  <p id="demo76" style="display: none; padding-left: 20px;">
+    
+                    Order by clause is used to rearrange the outputs either in ascending or in descending order.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME<br>
+    
+                    WHERE CONDITION<br>
+    
+                    ORDER BY COLUMN_NAME ASC/DESC;
+    
+                  </p>
+    
+                </li>
+    
+              </ul>
+    
+              <b>4. <u>NVL</u></b><br><br>
+              <pstyle="display: none; padding-left: 20px;>- NVL is used to replace NULL values with a specified default value.<br>
+              - It evaluates an expression and, if the expression is NULL, returns the specified default value otherwise, it returns the evaluated expression.<br>
+              - NVL is particularly useful when dealing with NULL values in queries or calculations, allowing you to handle such cases gracefully.</pstyle>
+              <ul>
+    
+                <li>
+    
+                  <span class="toggleButton" onclick="toggleVisibility(77)">NVL</span>
+    
+                  <p id="demo77" style="display: none; padding-left: 20px;">
+    
+                    It is used to retrieve data from the database, by selecting all the records.<br>
+    
+                    <u>SYNTAX:</u><br>
+    
+                    SELECT * FROM TABLE_NAME;
+    
+                  </p>
+    
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+
+    
+            <!--SUB QUERY-->
+    
+
+    
+            <div class="rdbms-module">
+    
+              <div class="sideHeading">SUB QUERY</div>
+    
+              <p>All the Data Definition Language statements are used to create the structure of the table and it is used to modify the structure of the table.<br>
+    
+                - All the Data Definition Language statements are permanent changes.</p>
+    
+                <ul>
+    
+                  <li>
+    
+                    <span class="toggleButton" onclick="toggleVisibility(78)">1. SINGLE ROW SUB QUERY</span>
+    
+                    <p id="demo78" style="display: none; padding-left: 20px;">
+    
+                      It is used to retrieve data from the database, by selecting all the records.<br>
+    
+                      <u>SYNTAX:</u><br>
+    
+                      SELECT * FROM TABLE_NAME;
+    
+                    </p>
+    
+                  </li>
+    
+                  <li>
+    
+                    <span class="toggleButton" onclick="toggleVisibility(79)">2. MULIT ROW SUB QUERY</span>
+    
+                    <p id="demo79" style="display: none; padding-left: 20px;">
+    
+                      It is used to retrieve data from the database, by selecting all the columns.<br>
+    
+                      <u>SYNTAX:</u><br>
+    
+                      SELECT * FROM TABLE_NAME
+    
+                    </p>
+    
+                  </li>
+    
+                  <li>
+    
+                    <span class="toggleButton" onclick="toggleVisibility(80)">3. NESTED SUB QUERY</span>
+    
+                    <p id="demo80" style="display: none; padding-left: 20px;">
+    
+                      It is a keyword and it is used to specify the table name.<br>
+    
+                      <u>SYNTAX:</u><br>
+    
+                      SELECT * FROM TABLE_NAME
+    
+                    </p>
+    
+                  </li>
+    
+                  <li>
+    
+                    <span class="toggleButton" onclick="toggleVisibility(81)">4. CO – RELATED SUB QUERY</span>
+    
+                    <p id="demo81" style="display: none; padding-left: 20px;">
+    
+                      Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+    
+                      <u>SYNTAX:</u><br>
+    
+                      SELECT * FROM TABLE_NAME<br>
+    
+                      WHERE CONDITION;
+    
+                    </p>
+    
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+              
+    
+              <!--JOINS-->
+    
+    
+              <div class="rdbms-module">
+    
+                <div class="sideHeading">JOINS</div>
+    
+                <p>All the Data Definition Language statements are used to create the structure of the table and it is used to modify the structure of the table.<br>
+    
+                  - All the Data Definition Language statements are permanent changes.</p>
+    
+                  <ul>
+    
+                    <li>
+    
+    
+                      <span class="toggleButton" onclick="toggleVisibility(82)">1. CROSS JOIN</span>
+    
+                      <p id="demo82" style="display: none; padding-left: 20px;">
+    
+                        It is used to retrieve data from the database, by selecting all the records.<br>
+    
+                        <u>SYNTAX:</u><br>
+    
+                        SELECT * FROM TABLE_NAME;
+    
+                      </p>
+    
+                    </li>
+    
+                    <li>
+    
+                      <span class="toggleButton" onclick="toggleVisibility(83)">2. INNER JOIN</span>
+    
+                      <p id="demo83" style="display: none; padding-left: 20px;">
+    
+                        It is used to retrieve data from the database, by selecting all the columns.<br>
+    
+    
+                        <u>SYNTAX:</u><br>
+    
+                        SELECT * FROM TABLE_NAME
+    
+                      </p>
+    
+                    </li>
+    
+                    <li>
+    
+                      <span class="toggleButton" onclick="toggleVisibility(84)">3. LEFT OUTER JOIN</span>
+    
+                      <p id="demo84" style="display: none; padding-left: 20px;">
+    
+                        It is a keyword and it is used to specify the table name.<br>
+    
+                        <u>SYNTAX:</u><br>
+    
+                        SELECT * FROM TABLE_NAME
+    
+                      </p>
+    
+    
+                    </li>
+    
+                    <li>
+    
+                      <span class="toggleButton" onclick="toggleVisibility(85)">4. RIGHT OUTER JOIN</span>
+    
+                      <p id="demo85" style="display: none; padding-left: 20px;">
+    
+                        Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+    
+                        <u>SYNTAX:</u><br>
+    
+                        SELECT * FROM TABLE_NAME<br>
+    
+                        WHERE CONDITION;
+    
+                      </p>
+    
+                    </li>
+    
+                    <li>
+    
+                      <span class="toggleButton" onclick="toggleVisibility(86)">5. FULL OUTER JOIN</span>
+    
+                      <p id="demo86" style="display: none; padding-left: 20px;">
+    
+    
+                        Where clause is used to give condition to the query and it will execute the output based on the condition.<br>
+    
+                        <u>SYNTAX:</u><br>
+    
+                        SELECT * FROM TABLE_NAME<br>
+    
+                        WHERE CONDITION;
+    
+                      </p>
+    
+                    </li>
+    
+                    <li>
+    
+                      <span class="toggleButton" onclick="toggleVisibility(87)">6. SELF JOIN</span>
+    
+                      <p id="demo87" style="display: none; padding-left: 20px;">
+    
+                        ############.<br>
+    
+                        <u>SYNTAX:</u><br>
+    
+    
+                        ############<br>
+    
+                        ############;
+    
+                      </p>
+    
+                    </li>
+    
+                  </ul>
+    
+                </div>
 
 
 
