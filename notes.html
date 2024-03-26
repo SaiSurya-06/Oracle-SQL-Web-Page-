@@ -283,36 +283,38 @@
           </p>
         </li>
         <li>
-          <span class="toggleButton" onclick="togg1leVisibility(20)">4. PRIMARY KEY CONSTRAIN</span>
-          <p id="demo20" style="display: none; padding-left: 20px;">
-            - Primary key is also know as unique representation column in a table.<br>
-            - It is an combination of UNIQUE & NOT NULL Constraints.<br>
-            - It wont allow duplicate values and null values.<br>
-            - There should be only oen primary key in a table.<br>
-            - It is used to build a relation between two or more tables with the help of Foreign Key using common columns.<br> 
-            <u>SYNTAX:</u><br>
-            CREATE TABLE TABLE_NAME<br>
-            (COLUMN_NAME1 DATATYPE(SIZE) UNIQUE,<br>
-            COLUMN_NAME2 DATATYPE(SIZE) NOT NULL,<br>
-            COLUMN_NAME3 DATATYPE(SIZE) CHECK(CONDITION,<br>
-            COLUMN_NAME4 DATATYPE(SIZE) PRIMARY KEY));
-          </p>
+          <span class="toggleButton" onclick="toggleVisibility(20)">4. PRIMARY KEY CONSTRAINT</span>
+<p id="demo20" style="display: none; padding-left: 20px;">
+    - Primary key is also known as a unique representation column in a table.<br>
+    - It is a combination of UNIQUE & NOT NULL Constraints.<br>
+    - It won't allow duplicate values and null values.<br>
+    - There should be only one primary key in a table.<br>
+    - It is used to build a relation between two or more tables with the help of Foreign Key using common columns.<br> 
+    <u>SYNTAX:</u><br>
+    CREATE TABLE TABLE_NAME<br>
+    (COLUMN_NAME1 DATATYPE(SIZE) UNIQUE,<br>
+    COLUMN_NAME2 DATATYPE(SIZE) NOT NULL,<br>
+    COLUMN_NAME3 DATATYPE(SIZE) CHECK(CONDITION),<br>
+    COLUMN_NAME4 DATATYPE(SIZE) PRIMARY KEY);
+</p>
+
         </li>
         <li>
           <span class="toggleButton" onclick="toggleVisibility(21)">5. FOREIGN KEY CONSTRAINT</span>
-          <p id="demo21 " style="display: none; padding-left: 20px;">
-            - Foreign key constraint is also know as reference integrity constraint.<br>
-            - The key which we are using for foreign key is "REFERENCES".<br>
-            - Foreign key allows duplicate values and null values.<br>
-            - foregin key is not an combination of unique and not null constraints.<br>
-            <u>SYNTAX:</u><br>
-            CREATE TABLE TABLE_NAME<br>
-            (COLUMN_NAME1 DATATYPE(SIZE) UNIQUE,<br>
-            COLUMN_NAME2 DATATYPE(SIZE) NOT NULL,<br>
-            COLUMN_NAME3 DATATYPE(SIZE) CHECK(CONDITION),<br>
-            COLUMN_NAME4 DATATYPE(SIZE) PRIMARY KEY,<br>
-            COLUMN_NAME DATATYPE(SIZE) REFERENCES ParentTABLE_NAME(COLUMN_NAME));
-          </p>
+<p id="demo21" style="display: none; padding-left: 20px;">
+    - Foreign key constraint is also known as reference integrity constraint.<br>
+    - The key which we are using for foreign key is "REFERENCES".<br>
+    - Foreign key allows duplicate values and null values.<br>
+    - Foreign key is not a combination of unique and not null constraints.<br>
+    <u>SYNTAX:</u><br>
+    CREATE TABLE TABLE_NAME<br>
+    (COLUMN_NAME1 DATATYPE(SIZE) UNIQUE,<br>
+    COLUMN_NAME2 DATATYPE(SIZE) NOT NULL,<br>
+    COLUMN_NAME3 DATATYPE(SIZE) CHECK(CONDITION),<br>
+    COLUMN_NAME4 DATATYPE(SIZE) PRIMARY KEY,<br>
+    COLUMN_NAME DATATYPE(SIZE) REFERENCES ParentTABLE_NAME(COLUMN_NAME));
+</p>
+
         </li>
         <li>
           <span class="toggleButton" onclick="toggleVisibility(22)">&nbsp; &nbsp; EXAMPLE FOR CONSTRAINTS</span>
@@ -812,7 +814,7 @@
     
                 <li>
     
-                  <span class="toggleButton" onclick="toggleVisibility(62)">11. LPAD</span>
+                  <span class="toggleButton" onclick="toggleVisibility(62)">11. RPAD</span>
     
                   <p id="demo62" style="display: none; padding-left: 20px;">
     
