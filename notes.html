@@ -342,9 +342,12 @@
         <li>
           <span class="toggleButton" onclick="toggleVisibility(23)">1. CREATE</span>
           <p id="demo23" style="display: none; padding-left: 20px;">
-            It is used to retrieve data from the database, by selecting all the records.<br>
+            This statement is used to <b><u>CREATE</u></b> a table in database and it is a perment change.<br>
             <u>SYNTAX:</u><br>
-            SELECT * FROM TABLE_NAME;
+            CREATE TABLE TABLE_NAME<br>
+            (COLUMN_NAME1 DATATYPE(SIZE) CONSTRAINT,<br>
+            COLUMN_NAME2 DATATYPE(SIZE) CONSTRAINT,<br>
+            COLUMN_NAME3 DATATYPE(SIZE) CONSTRAINT,);<br>
           </p>
         </li>
         <li>
@@ -1083,7 +1086,8 @@
                     </li>    
                     <li>    
                       <span class="toggleButton" onclick="toggleVisibility(85)">4. RIGHT OUTER JOIN</span>    
-                      - In Right outer join each and every record of Table1 will match with another table and it will display the output both matched records and unmatched record from only right side table.<br>    
+                      <p id="demo85" style="display: none; padding-left: 20px;">    
+                        - In Right outer join each and every record of Table1 will match with another table and it will display the output both matched records and unmatched record from only right side table.<br>    
                         <u><b>SYNTAX:</b></u><br>    
                         &nbsp; &nbsp; <b><u>ORACLE</u>:-</b><br>
                         &nbsp; &nbsp; &nbsp; &nbsp; SELECT * FROM T1, T2
@@ -1136,9 +1140,50 @@
                        &nbsp; &nbsp; <b><u>EXAMPLE</u>:-</b><br>
                        &nbsp; &nbsp; &nbsp; &nbsp; SELECT E1.ENAME, E2.ENAME FROM EMP E1 JOIN EMP E2<br>
                        &nbsp; &nbsp; &nbsp; &nbsp; ON E1.MGR = E2.EMPNO ;<br>
+                       &nbsp; &nbsp; <b><u>SYNTAX TO PERFORM JOINS ON MORE THEN TWO TABLES</u>:-</b><br>
+                       &nbsp; &nbsp; <b><u>ORACLE</u>:-</b><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; SELECT * FROM T1, T2, T3
+                        &nbsp; &nbsp; &nbsp; &nbsp; WHERE T1.COMMON_COLUMN = T2.COMMON_COLUMN<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; AND T2.COMMON_COLUMN = T3.COMMON_COLUMN<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; AND CONDITION;<br>
+                        &nbsp; &nbsp; <b><u>ANSI</u>:-</b><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; SELECT * FROM T1 JOIN T2 <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; ON T1.COMMON_COLUMN = T2.COMMON_COLUMN JOIN T3<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; ON T2.COMMON_COLUMN = T3.COMMON_COLUMN<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; AND CONDITION;<br>
                       </p>    
                     </li>    
                   </ul>    
+                </div>
+
+                <!--NORMALIZATION-->
+
+                <div class="rdbms-module">
+                  <div class="sideHeading">NORMALIZATION</div>
+                  <p>- The process of organizing the data in data base is know as NORMALIZATION.<br>
+                    - the process of decomposing large amount of data into small amount data is know as NORMALIZATION.<br>
+                    - Normalization it is used to reduce <b><u>Data Redundancy</u></b>.<br><br>
+
+                    <u><b>DATA REDUNDANCY</b></u>:-<br><br>
+                    - Similar type if data present in a table multiple times is know as <u><b>Data Redundancy</b></u>.<br>
+                    - Using Normalization we can convert inconsistant data into consistant data.<br>
+                    - Inconsistant means <u><b>Anomalies</b></u>(Errors).<br><br>
+
+                    <u><b>TYPES OF ANOMALIES</b></u>:-<br><br>
+                    1. Inserting Anomalie<br>
+                    2. Updating Anomalie<br>
+                    3. Deleting Anomalie<br><br>
+                    - To over come from these anomalies we have to go for normalization forms.<br>
+                    - Normalization forms are introduced by Edgar F. Codd in the year 1970.<br><br>
+
+                    <u><b>TYPES OF NORMALIZATION FORMS</b></u>:-<br><br>
+                    - 1NF<br>
+                    - 2NF<br>
+                    - 3NF<br>
+                    - 3.5NF (BCNF)<br>
+                    - 4NF<br>
+                    - 5NF<br>
+                  </p>
                 </div>
     </div>
     <script src="script.js"></script>
